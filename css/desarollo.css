@@ -261,23 +261,12 @@
     justify-content: center;
     color: blueviolet;
 }
-.carousel slide{
-    display: flex;
-    justify-content: center;
-    width: 500px;
-    height: 300px;
-    
-}
-.carousel-inner{
-    display: flex;
-    margin-left: 30%;
-    align-items: center;
-}
 
 .imgprin{
-    
-    width: 500px;
-    height: 300px;
+    align-items: center;
+    margin-left: 350px;
+    width: 700px;
+    height: 400px;
 }
 .Parrafos{
     font-size: 30px;
@@ -292,7 +281,7 @@
 }
 .noticias{
     display: flex;
-    width: 100%;
+    width: calc(100% - 260px);
 }
 .not1{
     flex:0 0 60%;
@@ -305,7 +294,7 @@
 }
 .tecno{
     flex: 0 0 40%;
-   padding: 20px;
+    margin-left: 15px;
    margin-top: 300px;
 }
 .card1{
