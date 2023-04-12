@@ -259,12 +259,25 @@
 /*CSS NORMAL */
 .card{
     margin: 10px;
+    width: 1300px;
+    
    
 }
-
+.card-img-top{
+    height: 200px;
+}
 .contenedorarticulos{
     width: 100%;
     display: flex;
    
     
+}
+.contentmsg{
+    margin:30px;
+
+}
+.inputtexto{
+    width: 1000px;
+    height: 60px;
+    border-radius: 10px;
 }
