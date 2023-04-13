@@ -5,75 +5,225 @@
 	<!-- BOOTSTRAP LINK -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<!-- LINK CSS -->
-    <link rel="stylesheet" href="./css/styles.css">
+    
+  <link rel="stylesheet" href="../css/styleNavBar.css">
+  <!-- ICONOS GRATIS -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
 
 	<title>Contactos</title>
     <script src="../js/contactos.js"></script>
     <style>
         body{
-          background-image: url('img/contactos/fondo.jpg');
+          background-image: url('../img/1_vxjAHkrXbGG6gOiPZgjeZA.jpeg');
           background-repeat: no-repeat;
           background-attachment: fixed;
-          background-size: 45%;
+          background-size: 100%;
           background-position-y: center;
-          background-position-x: left;
+          background-position-x: right;
         }
     </style>
 </head>
 <body>
+  <div class="sidebar close"><!-- SIDEBAR HAS TWO CLASES .sidebar & .close -->
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus'></i><!-- ADDING C ICON -->
+      <span class="logo_name">CodingLab</span><!-- LOGO COMES HERE-->
+    </div>
+    <ul class="nav-links">
+      <!-- 1st SIDEBAR ICON-->
+      <li>
+        <a href="index.html">
+          <i class='bx bx-grid-alt' ></i><!-- ADDING ICON -->
+          <span class="link_name">Home</span>
+        </a>
+        
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">DashBoard</a></li><!-- POP UP WHEN THE SIDE BAR IS HIDDEN -->
+        </ul>
+      </li>
+
+      <!-- 2nd SIDEBAR ICON WITH A SUB MENU INSIDE -->
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class="bx bx-collection"></i><!-- ADDING ICON-->
+            <span class="link_name">Category</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Category</a></li>
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">JavaScript</a></li>
+          <li><a href="#">PHP & MySQL</a></li>
+        </ul>
+      </li>
+      <!-- 3rd SIDEBAR ICON WITH A SUB MENU INSIDE-->
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-book-alt' ></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Posts</a></li>
+          <li><a href="#">Web Design</a></li>
+          <li><a href="#">Login Form</a></li>
+          <li><a href="#">Card Design</a></li>
+        </ul>
+      </li>
+      <!-- 4th SIDE BAR ICON -->
+      <li>
+        <a href="#">
+          <i class='bx bx-pie-chart-alt-2' ></i>
+          <span class="link_name">Analytics</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Analytics</a></li>
+        </ul>
+      </li>
+      <!-- 5th SIDE BAR ICON -->
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart' ></i>
+          <span class="link_name">Chart</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Chart</a></li>
+        </ul>
+      </li>
+      <!-- 6th SIDE BAR ICON WHIT A SUB MENU-->
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug' ></i>
+            <span class="link_name">Plugins</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow' ></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Plugins</a></li>
+          <li><a href="#">UI Face</a></li>
+          <li><a href="#">Pigments</a></li>
+          <li><a href="#">Box Icons</a></li>
+        </ul>
+      </li>
+      <!-- 7th SIDE BAR MENU ICON -->
+      <!-- Página de contactos-->
+      <li>
+        <a href="contactos.html">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Contactos</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Contactos</a></li>
+        </ul>
+      </li>
+      <!-- 8th SIDE BAR MENU ICON -->
+      <li>
+        <a href="#">
+          <i class='bx bx-history'></i>
+          <span class="link_name">History</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">History</a></li>
+        </ul>
+      </li>
+      <!-- 9th SIDE BAR MENU ICON -->
+      <li>
+        <a href="#">
+          <i class='bx bx-cog' ></i>
+          <span class="link_name">Setting</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Setting</a></li>
+        </ul>
+      </li>
+      <!-- USER CREDENTIALS SIDE BAR -->
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+            <img src="../media/sitePics/cornholio.jpeg" alt="profileImg">
+          </div>
+          <div class="name-job">
+            <div class="profile_name">Prem Shahi</div>
+            <div class="job">Web Desginer</div>
+          </div>
+          <i class='bx bx-log-out' ></i>
+        </div>
+      </li>
+    </ul>
+  </div><!-- END OF SIDE BAR -->
+
     <!--cards-->
-    <div class="position-relative">
-        <div class="position-x: left;">
-            <div class="card" style="width: 45rem;position: relative;">
-                <div class="card-body ">
-                  <div class="row justify-content-center">
-                    <div class="col-12">
-                        <h2 class="text-center display-4">Contactanos</h2>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-9">
-                      <h3>Nuestras Redes Sociales</h3>
-                      <br>
-                      <center>
-                        <input type="button" class="btn btn-outline-secondary" value="Facebook" onclick="presionBotonFacebook()">
-                        <input type="button" class="btn btn-outline-secondary" value="Instagram" onclick="presionBotonInstagram()">
-                        <input type="button" class="btn btn-outline-secondary" value="Whatsapp" onclick="presionBotonWhatsapp()">
-                      </center>
-                      <br>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-9">
-                      <h3>Nuestra ubicacion</h3>
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.068280140347!2d-68.1141798859092!3d-16.52265018860222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f20ee187a3103%3A0x2f2bb2b7df32a24d!2sUniversidad%20Cat%C3%B3lica%20Boliviana!5e0!3m2!1ses-419!2sbo!4v1680190591044!5m2!1ses-419!2sbo" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-9">
-                        <br>
-                      <h3>Desarrolladores 💻</h3>
-                      <p>Natalia Gutierrez</p>
-                      <p>Jordan Martinez</p>
-                      <p>Carlos Nina</p>
-                      <p>Willy Vargas</p>
-                      <p>Juan Pablo Via</p>
-                    </div>
-                  </div>
-                  <div class="row justify-content-center">
-                    <div class="col-9">
-                        <br>
-                      <h3>Accede a nuestro repositorio</h3>
-                      <br>
-                        <center>
-                            <input type="button" class="btn btn-outline-secondary" value="GitHub" onclick="presionBotonGitHub()">
-                        </center>
-                    </div>
-                  </div>
-                </div>
+    <center>
+      <div class="card" style="width: 45rem;position: relative;">
+        <div class="card-body ">
+          <div class="row justify-content-center">
+            <div class="col-12">
+                <h2 class="text-center display-4">Contactanos</h2>
             </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-9">
+              <h3>Nuestras Redes Sociales</h3>
+              <br>
+              <center>
+                <input type="button" class="btn btn-outline-secondary" value="Facebook" onclick="presionBotonFacebook()">
+                <input type="button" class="btn btn-outline-secondary" value="Instagram" onclick="presionBotonInstagram()">
+                <input type="button" class="btn btn-outline-secondary" value="Whatsapp" onclick="presionBotonWhatsapp()">
+              </center>
+              <br>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-9">
+              <h3>Nuestra ubicacion</h3>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3825.068280140347!2d-68.1141798859092!3d-16.52265018860222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f20ee187a3103%3A0x2f2bb2b7df32a24d!2sUniversidad%20Cat%C3%B3lica%20Boliviana!5e0!3m2!1ses-419!2sbo!4v1680190591044!5m2!1ses-419!2sbo" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-9">
+                <br>
+              <h3>Desarrolladores 💻</h3>
+              <p>Natalia Gutierrez</p>
+              <p>Jordan Martinez</p>
+              <p>Carlos Nina</p>
+              <p>Willy Vargas</p>
+              <p>Juan Pablo Via</p>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col-9">
+                <br>
+              <h3>Accede a nuestro repositorio</h3>
+              <br>
+                <center>
+                    <input type="button" class="btn btn-outline-secondary" value="GitHub" onclick="presionBotonGitHub()">
+                </center>
+            </div>
+          </div>
         </div>
     </div>
+    </center>
 
 
 </body>
+<script>
+  let arrow = document.querySelectorAll(".arrow");// ACTION LISTENERS FOR THE ARROWS IN THE SUB MENUS
+  for (var i = 0; i < arrow.length; i+=1) {
+    arrow[i].addEventListener("click", (e)=>{
+      let arrowParent = e.target.parentElement.parentElement; // SELECTING MAIN PARENT OF ARROW
+      arrowParent.classList.toggle("showMenu");
+    });
+    let sidebar = document.querySelector(".sidebar");// ADDING A SCROLLBAR FOR THE SIDEBAR
+    let sidebarBtn = document.querySelector(".bx-menu");
+    sidebarBtn.addEventListener("click", ()=>{// SIDE BAR EVENT LISTENER
+      sidebar.classList.toggle("close");
+   });
+  }
+</script>
+</html>
