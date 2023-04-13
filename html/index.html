@@ -8,81 +8,120 @@
   <link rel="stylesheet" href="../css/styleNavBar.css">
   <!-- ICONOS GRATIS -->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    #myDiv {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  overflow: auto;
+}
+#myDiv1 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  overflow: auto;
+}
+#myDiv2 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid black;
+  overflow: auto;
+}
+img{
+  width : 125px;
+  height: auto;
+}
+button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: white;
+      background-color: #11101d;
+      border-radius: 50px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+    }
+    
+    button:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.2);
+      background-color: #e67e22;
+    }
+  </style>
 </head>
 <body>
   <div class="sidebar close"><!-- SIDEBAR HAS TWO CLASES .sidebar & .close -->
     <div class="logo-details">
       <i class='bx bxl-c-plus-plus'></i><!-- ADDING C ICON -->
-      <span class="logo_name">CodingLab</span><!-- LOGO COMES HERE-->
+      <span class="logo_name">REVISTA "UCB"</span><!-- LOGO COMES HERE-->
     </div>
     <ul class="nav-links">
       <!-- 1st SIDEBAR ICON-->
       <li>
-        <a href="#">
+        <a href="index.html">
           <i class='bx bx-grid-alt' ></i><!-- ADDING ICON -->
-          <span class="link_name">Dashboard</span>
+          <span class="link_name">Inicio</span>
         </a>
         
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">DashBoard</a></li><!-- POP UP WHEN THE SIDE BAR IS HIDDEN -->
+          <li><a class="link_name" href="index.html">Inicio</a></li><!-- POP UP WHEN THE SIDE BAR IS HIDDEN -->
         </ul>
       </li>
 
-      <!-- 2nd SIDEBAR ICON WITH A SUB MENU INSIDE -->
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class="bx bx-collection"></i><!-- ADDING ICON-->
-            <span class="link_name">Category</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Category</a></li>
-          <li><a href="#">HTML & CSS</a></li>
-          <li><a href="#">JavaScript</a></li>
-          <li><a href="#">PHP & MySQL</a></li>
-        </ul>
-      </li>
-      <!-- 3rd SIDEBAR ICON WITH A SUB MENU INSIDE-->
-      <li>
-        <div class="iocn-link">
-          <a href="#">
-            <i class='bx bx-book-alt' ></i>
-            <span class="link_name">Posts</span>
-          </a>
-          <i class='bx bxs-chevron-down arrow' ></i>
-        </div>
-        <ul class="sub-menu">
-          <li><a class="link_name" href="#">Posts</a></li>
-          <li><a href="#">Web Design</a></li>
-          <li><a href="#">Login Form</a></li>
-          <li><a href="#">Card Design</a></li>
-        </ul>
-      </li>
+     
       <!-- 4th SIDE BAR ICON -->
       <li>
-        <a href="#">
+        <a href="desarrollo_web.html">
           <i class='bx bx-pie-chart-alt-2' ></i>
-          <span class="link_name">Analytics</span>
+          <span class="link_name">Desarrollo web</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Analytics</a></li>
+          <li><a class="link_name" href="desarrollo_web.html">Desarrollo web</a></li>
         </ul>
       </li>
       <!-- 5th SIDE BAR ICON -->
       <li>
-        <a href="#">
+        <a href="inteligencia_artificial.html">
           <i class='bx bx-line-chart' ></i>
-          <span class="link_name">Chart</span>
+          <span class="link_name">IA</span>
         </a>
         <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Chart</a></li>
+          <li><a class="link_name" href="inteligencia_artificial.html">IA</a></li>
         </ul>
       </li>
       <!-- 6th SIDE BAR ICON WHIT A SUB MENU-->
+      
+      <!-- 7th SIDE BAR MENU ICON -->
+     
+     
+      <!-- 8th SIDE BAR MENU ICON -->
       <li>
-        <div class="iocn-link">
+        <a href="gestiontecnologica.html">
+          <i class='bx bx-history'></i>
+          <span class="link_name">Gestion Tecnológica</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="gestiontecnologica.html">Gestion Tecnológica</a></li>
+        </ul>
+      </li>
+      
+      <!-- Página de contactos-->
+      <li>
+        <a href="contactos.html">
+          <i class='bx bx-compass' ></i>
+          <span class="link_name">Contactos</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="contactos.html">Contactos</a></li>
+        </ul>
+      </li>
+      <!-- 9th SIDE BAR MENU ICON -->
+      
+      <!-- USER CREDENTIALS SIDE BAR -->
+      <li>
+        <div class="iocn-link" style="visibility: hidden;">
           <a href="#">
             <i class='bx bx-plug' ></i>
             <span class="link_name">Plugins</span>
@@ -96,50 +135,6 @@
           <li><a href="#">Box Icons</a></li>
         </ul>
       </li>
-      <!-- 7th SIDE BAR MENU ICON -->
-      <!-- Página de contactos-->
-      <li>
-        <a href="contactos.html">
-          <i class='bx bx-compass' ></i>
-          <span class="link_name">Contactos</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Contactos</a></li>
-        </ul>
-      </li>
-      <!-- 8th SIDE BAR MENU ICON -->
-      <li>
-        <a href="#">
-          <i class='bx bx-history'></i>
-          <span class="link_name">History</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">History</a></li>
-        </ul>
-      </li>
-      <!-- 9th SIDE BAR MENU ICON -->
-      <li>
-        <a href="#">
-          <i class='bx bx-cog' ></i>
-          <span class="link_name">Setting</span>
-        </a>
-        <ul class="sub-menu blank">
-          <li><a class="link_name" href="#">Setting</a></li>
-        </ul>
-      </li>
-      <!-- USER CREDENTIALS SIDE BAR -->
-      <li>
-        <div class="profile-details">
-          <div class="profile-content">
-            <img src="../media/sitePics/cornholio.jpeg" alt="profileImg">
-          </div>
-          <div class="name-job">
-            <div class="profile_name">Prem Shahi</div>
-            <div class="job">Web Desginer</div>
-          </div>
-          <i class='bx bx-log-out' ></i>
-        </div>
-      </li>
     </ul>
   </div><!-- END OF SIDE BAR -->
 
@@ -147,14 +142,106 @@
   <section class="home-section">
     <div class="home-content">
       <i class='bx bx-menu' ></i>
-      <span class="text">Drop Down Sidebar</span>
+      <span class="text">Noticias destacadas </span>
+    </div>      
+
+    
+    <center>
+    <div id="products">
+      <div>
+            <div id="myDiv">
+              <center><h1>¿TIK TOK prohibido en Australia?</h1>
+                <img src="../img/gt_noticia1.avif" class="card-img-top" alt="..."></center>
+              <div class="card-body">
+                  11 Nov 2022
+                <h5 class="card-title">
+                  Australia anunció el martes que prohibirá la aplicación TikTok, propiedad del grupo chino ByteDance, en los dispositivos gubernamentales por cuestiones de seguridad, sumándose a la lista de países occidentales que adoptaron la misma medida.
+                </h5>
+                <p class="card-text">
+                  Previamente, Estados Unidos, Canadá, Nueva Zelanda, Reino Unido, Francia, Países Bajos y la Comisión Europea habían tomado decisiones similares.
+  
+  Dreyfus explicó que el gobierno aprobaría algunas excepciones “caso por caso” pero estableciendo medidas para atenuar los riesgos de seguridad.
+  
+  Expertos de ciberseguridad advierten que la aplicación, con más de 1,000 millones de usuarios, puede usarse para recoger datos que luego se comparten con las autoridades chinas.
+  
+
+  
+                </p></div>
+            </div>
+        
+          <button onclick="zoomIn()">Seguir leyendo</button>
+          <button onclick="zoomOut()">Ocultar</button>
+        </div>
+
+
+
+        <div>
+          <div id="myDiv1">
+            <center><h1>Aprende desarrollo web</h1>
+              <img src="../img/angular.jpeg" class="card-img-top" alt="..."></center>
+            <div class="card-body">
+                01 Feb 2023
+              <h5 class="card-title">
+                Empieza a comprender que son los frameworks para desarrollo web
+              </h5>
+              <p class="card-text">
+                Diseña págians web de manera rápida y sencilla, al utilizar angular.
+                Con nosotros puedes mejorar tus conocimientos en temas de:
+                <ul>
+                  <li>Front end (CSS)</li>
+                  <li>Back end(JavaScript)</li>
+                  <li>Manejo de información</li>
+                  <li>Concurrencia</li>
+                </ul>
+                
+                <p>¡Para mas información ve a nuestra sección de desarroll web!</p>
+                <h3>Que esperas</h3>
+
+
+              </p></div>
+          </div>
+      
+        <button onclick="zoomIn1()">Seguir leyendo</button>
+        <button onclick="zoomOut1()">Ocultar</button>
+      </div>
+
+
+
+
+      <div>
+        <div id="myDiv2">
+          <center><h1>China exigirá "evaluación de seguridad" a productos de inteligencia artificial</h1>
+            <img src="../img/noticia3.jpeg" class="card-img-top" alt="..."></center>
+          <div class="card-body">
+              11 abr 2023
+            <h5 class="card-title">
+              Australia anunció el martes que prohibirá la aplicación TikTok, propiedad del grupo chino ByteDance, en los dispositivos gubernamentales por cuestiones de seguridad, sumándose a la lista de países occidentales que adoptaron la misma medida.
+            </h5>
+            <p class="card-text">
+              <p>Las herramientas de inteligencia artificial desarrolladas en China serán sometidas a una "inspección de
+                seguridad", en la que también se comprombará que la IA refleje "los valores socialistas fundamentales".</p>
+
+
+
+            </p></div>
+        </div>
+    
+      <button onclick="zoomIn2()">Seguir leyendo</button>
+      <button onclick="zoomOut2()">Ocultar</button>
     </div>
+          <div id="products">  
+          </center>
+          <div id="title">    
+            <h2>¡Actualizamos nuestro sitio web diariamente!</h2>
+           </div>
   </section>
   
  
  
 </body>
 <script>
+
+
   let arrow = document.querySelectorAll(".arrow");// ACTION LISTENERS FOR THE ARROWS IN THE SUB MENUS
   for (var i = 0; i < arrow.length; i+=1) {
     arrow[i].addEventListener("click", (e)=>{
@@ -167,5 +254,105 @@
       sidebar.classList.toggle("close");
    });
   }
+
+document.getElementById("zoomInButton").addEventListener("click", zoomIn);
+document.getElementById("zoomOutButton").addEventListener("click", zoomOut);
+
+  function zoomIn() {
+  var elem = document.getElementById("myDiv");
+  var width = elem.offsetWidth;
+  var height = elem.offsetHeight;
+  var interval = setInterval(function() {
+    if (width >= 500) {
+      clearInterval(interval);
+    } else {
+      width += 10;
+      height += 10;
+      elem.style.width = width + "px";
+      elem.style.height = height + "px";
+    }
+  }, 10);
+}
+
+function zoomOut() {
+  var elem = document.getElementById("myDiv");
+  var width = elem.offsetWidth;
+  var height = elem.offsetHeight;
+  var interval = setInterval(function() {
+    if (width <= 250) {
+      clearInterval(interval);
+    } else {
+      width -= 10;
+      height -= 10;
+      elem.style.width = width + "px";
+      elem.style.height = height + "px";
+    }
+  }, 10);
+}
+
+
+function zoomIn1() {
+  var elem = document.getElementById("myDiv1");
+  var width = elem.offsetWidth;
+  var height = elem.offsetHeight;
+  var interval = setInterval(function() {
+    if (width >= 500) {
+      clearInterval(interval);
+    } else {
+      width += 10;
+      height += 10;
+      elem.style.width = width + "px";
+      elem.style.height = height + "px";
+    }
+  }, 10);
+}
+
+function zoomOut1() {
+  var elem = document.getElementById("myDiv1");
+  var width = elem.offsetWidth;
+  var height = elem.offsetHeight;
+  var interval = setInterval(function() {
+    if (width <= 250) {
+      clearInterval(interval);
+    } else {
+      width -= 10;
+      height -= 10;
+      elem.style.width = width + "px";
+      elem.style.height = height + "px";
+    }
+  }, 10);
+}
+function zoomIn2() {
+  var elem = document.getElementById("myDiv2");
+  var width = elem.offsetWidth;
+  var height = elem.offsetHeight;
+  var interval = setInterval(function() {
+    if (width >= 500) {
+      clearInterval(interval);
+    } else {
+      width += 10;
+      height += 10;
+      elem.style.width = width + "px";
+      elem.style.height = height + "px";
+    }
+  }, 10);
+}
+
+function zoomOut2() {
+  var elem = document.getElementById("myDiv2");
+  var width = elem.offsetWidth;
+  var height = elem.offsetHeight;
+  var interval = setInterval(function() {
+    if (width <= 250) {
+      clearInterval(interval);
+    } else {
+      width -= 10;
+      height -= 10;
+      elem.style.width = width + "px";
+      elem.style.height = height + "px";
+    }
+  }, 10);
+}
+
 </script>
 </html>
